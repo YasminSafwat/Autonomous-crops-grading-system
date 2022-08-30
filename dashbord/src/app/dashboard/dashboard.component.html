@@ -1,0 +1,45 @@
+<div class="robotcontainer">
+  <div class="item" *ngFor="let item of Items">
+      <h1 style="background-color: rgba(188, 220, 220, 0.769);">Item #{{item.id}} <span> {{item.ON? "ON" : "OFF"}}</span></h1>
+      <h3>Providing Robot</h3>
+      <h3>Sorting Robot</h3>
+      <h3>Grading Robot</h3>
+      <button class="colorC" (click)="btnClick(item)">Display Grades</button>
+  </div>
+</div> 
+
+<div class="robotcontainer" >
+  <div *ngFor="let crop of crops" class="{{curr_item.crop_name}} cropimgcommon">
+      <br>
+      <br>
+      {{crop.grade == ""? "pending" : crop.grade}}
+      <br>
+  </div>
+</div>
+  <!-- <div class="header">
+      <h1>
+          Item: #{{item.id}}
+      </h1>
+  </div>
+  <div class="body">
+      <div class="it robot">
+          <h2 style="font-size: 20px;">Providing Robot</h2>
+          <img src="assets/robot (4).png" alt="Robot">
+      </div>
+      <div class="it robot">
+          <h2 style="font-size: 20px;">Sorting Robot</h2>
+          <img src="assets/robot (5).png" alt="Robot">
+      </div>
+      <div class="it robot">
+          <h2 style="font-size: 20px;">Grading Robot</h2>
+          <img src="assets/robot (6).png" alt="Robot"> 
+      </div>
+      <div class="it crops" >
+          <h3 style="font-size: 15px; width: 100%; margin:0px; background-color: rgba(188, 220, 220, 1); border-radius: 30px;
+          padding:10px;">
+              {{crops.length}} {{item.crop_name}}(s)
+          </h3>
+          <div *ngFor="let crop of crops" class="{{item.crop_name}} cropimgcommon"> </div>
+      </div>
+  </div> -->
+

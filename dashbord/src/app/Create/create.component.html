@@ -1,0 +1,40 @@
+<div class="form">
+    <div class="b">
+        <br>
+        <label id="cropplant">Which crop do you want to plant?!</label><br><br>
+        <mat-radio-group aria-labelledby="cropplant" class="a" [(ngModel)]="name">
+            <mat-radio-button *ngFor="let crop of cropss" [value]="crop">
+                <img src="assets/{{crop}}.png" alt="{{crop}}" width="40px" height="40px">
+            </mat-radio-button>
+        </mat-radio-group>
+    </div>
+    <br>
+    <div class="b">
+        <label id="organicity">Are the crops organic or non organic?!</label>
+        <mat-radio-group aria-labelledby="organicity" class="a d" [(ngModel)]="organicity">
+            <mat-radio-button [value]="true">
+                Organic
+            </mat-radio-button>
+            <mat-radio-button [value]="false">
+                Non-Organic
+            </mat-radio-button>
+        </mat-radio-group>
+    </div>
+    <br>
+    <div class="b">
+        <label id="insectpests">Are the crops most likely to be exposed to insect pests and fungi?</label>
+        <mat-radio-group aria-labelledby="insectpests" class="a d" [(ngModel)]="insect_pests">
+            <mat-radio-button [value]="true">
+                Yes
+            </mat-radio-button>
+            <mat-radio-button [value]="false">
+                No
+            </mat-radio-button>
+        </mat-radio-group>
+    </div>
+    <div class="b">
+        <label>How many crops do you want to plant?</label>
+        <input type="text" [(ngModel)]="crop_number">
+    </div>
+    <input type="button" value="Plant crop!" (click)="sendToFireStore()">
+</div>

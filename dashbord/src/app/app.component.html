@@ -1,0 +1,9 @@
+<div class="a">
+  <div class="routesContainer">
+    <span routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" ><a [routerLink]="['/']"> Dashboard </a> </span>
+  <span routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" ><a [routerLink]="['/', 'Create']"> Create</a> </span>
+  </div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>

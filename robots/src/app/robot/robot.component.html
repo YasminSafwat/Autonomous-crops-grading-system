@@ -1,0 +1,30 @@
+<div class="robotcontainer">
+    <div class="header">
+        <h1>
+            Item: #{{item.id}}
+            <button class="colorC" (click)="btnClick()">Turn {{item.ON == true? "OFF" : "ON"}}</button>
+            <br>
+        </h1>
+    </div>
+    <div class="body">
+        <div class="it robot">
+            <h2 style="font-size: 20px;">Providing Robot</h2>
+            <img src="assets/robot (4).png" alt="Robot">
+        </div>
+        <div class="it robot">
+            <h2 style="font-size: 20px;">Sorting Robot</h2>
+            <img src="assets/robot (5).png" alt="Robot">
+        </div>
+        <div class="it robot">
+            <h2 style="font-size: 20px;">Grading Robot</h2>
+            <img src="assets/robot (6).png" alt="Robot"> 
+        </div>
+        <div class="it crops" >
+            <h3 style="font-size: 15px; width: 100%; margin:0px; background-color: rgba(188, 220, 220, 1); border-radius: 30px;
+            padding:10px;">
+                {{crops.length}} {{item.crop_name}}(s)
+            </h3>
+            <div *ngFor="let crop of crops" class="{{item.crop_name}} cropimgcommon"> </div>
+        </div>
+    </div>
+</div>

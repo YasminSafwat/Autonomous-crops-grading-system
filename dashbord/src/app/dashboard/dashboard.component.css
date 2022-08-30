@@ -1,0 +1,97 @@
+.robotcontainer {
+    box-sizing: border-box;
+    width: 95%;
+    min-height: 330px;
+    margin: auto;
+    margin-top: 10px;
+    border: solid 4px rgb(254, 95, 85);
+    padding:20px;
+    border-radius: 30px;
+    text-align: center;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+button {
+    border:none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding:10px;
+    font-size:16px;
+    width: 60%;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.item {
+    display:flex;
+    flex: 0 0 250px;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    border:solid 3px rgb(254, 95, 85);
+    border-radius: 30px;
+}
+
+.crops {
+    flex: 2 0 50px;
+    background-color: rgba(240, 255, 255,1);
+    box-sizing: border-box;
+    padding: 15px;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: scroll;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+}
+
+.cropimgcommon {
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 30px 20px;
+    cursor: pointer;
+    outline: rgb(173, 255, 47) solid 2px;
+    outline-offset: 6px;
+}
+
+.Apple {
+    background-image: url("/assets/Apple.png");
+}
+
+.Tomato {
+    background-image: url("/assets/Tomato.png");
+}
+
+.Eggplant {
+    background-image: url("/assets/Eggplant.png");
+}
+
+.Peach {
+    background-image: url("/assets/Peach.png");
+}
+
+.Pear {
+    background-image: url("/assets/Pear.png");
+}
+
+.Orange {
+    background-image: url("/assets/Orange.png");
+}
+
+.Leek {
+    background-image: url("/assets/Leek.png");
+}
+
+.Strawberry {
+    background-image: url("/assets/Strawberry.png");
+}
+

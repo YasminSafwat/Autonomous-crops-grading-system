@@ -1,0 +1,23 @@
+.routesContainer {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(254, 95, 85,0.7);
+    border-radius: 30px;
+    min-height: 60px;
+}
+
+span {
+    box-sizing: border-box;
+    display: block;
+    width: 50%;
+    text-align: center;
+}
+
+a {
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}

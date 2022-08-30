@@ -1,0 +1,22 @@
+.colorA {
+    background-color:rgb(240, 255, 255);
+    color:#4F6367;
+}
+.colorB {
+    background-color: rgba(188, 220, 220, 0.769);
+}
+.colorC {
+    background-color: rgb(254, 95, 85);
+    color:azure;
+}
+
+
+body {
+    box-sizing: border-box;
+    position:absolute;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    height: 100%;
+    font-family:cursive;
+    overflow: scroll;
+}
